@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peak Fitness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Peak Fitness Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="carousel">
+        <div class="carousel-container"></div>
+        <div class="carousel-navigation">
+          <button class="carousel-button prev">&#8249;</button>
+          <button class="carousel-button next">&#8250;</button>
+        </div>
+      </section>
+      <section id="hero">
+        <h1>Welcome to Peak Fitness</h1>
+        <p>The best gym to achieve your fitness goals.</p>
+        <button>Join Now</button>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Peak Fitness is a premier fitness center that offers state-of-the-art equipment, expert trainers and nutritionists, and a variety of group fitness classes. Our mission is to empower our members to achieve their fitness goals and live a healthy lifestyle.</p>
+        <ul>
+          <li>Expert Trainers</li>
+          <li>Personalized Nutrition Plans</li>
+          <li>Variety of Group Fitness Classes</li>
+        </ul>
+      </section>
+
+      <section id="Teams">
+  <h2>Our Teams</h2>
+  <p>Meet the talented individuals behind our gym:</p>
+  <div class="team-categories">
+    <div class="team-category trainers" onmouseover="showTrainersPopup()" onmouseout="hideTrainersPopup()">
+      <h3>Trainers</h3>
+    </div>
+    <div class="team-category assistants" onmouseover="showAssistantsPopup()" onmouseout="hideAssistantsPopup()">
+      <h3>Assistants</h3>
+    </div>
+  </div>
+  <div class="team-popup trainers-popup" id="trainers-popup">
+    <div class="team-popup-container">
+      <h3>Our Trainers</h3>
+      <div class="trainer">
+        <img src="trainer1.jpg" alt="Trainer 1">
+        <h4>John Smith</h4>
+        <p>john.smith@gym.com</p>
+      </div>
+      <div class="trainer">
+        <img src="trainer2.jpg" alt="Trainer 2">
+        <h4>Jane Doe</h4>
+        <p>jane.doe@gym.com</p>
+      </div>
+      <div class="trainer">
+        <img src="trainer3.jpg" alt="Trainer 3">
+        <h4>Mike Johnson</h4>
+        <p>mike.johnson@gym.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="team-popup assistants-popup" id="assistants-popup">
+    <div class="team-popup-container">
+      <h3>Our Assistants</h3>
+      <div class="assistant">
+        <img src="assistant1.jpg" alt="Assistant 1">
+        <h4>Sara Williams</h4>
+        <p>sara.williams@gym.com</p>
+      </div>
+      <div class="assistant">
+        <img src="assistant2.jpg" alt="Assistant 2">
+        <h4>Tom Brown</h4>
+        <p>tom.brown@gym.com</p>
+      </div>
+      <div class="assistant">
+        <img src="assistant3.jpg" alt="Assistant 3">
+        <h4>Emily Davis</h4>
+        <p>emily.davis@gym.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>
+            <h3>Strength Training</h3>
+            <img src="1.jpg" alt="Strength Training">
+            <p>Build muscle and increase strength with our state-of-the-art equipment and expert trainers.</p>
+          </li>
+          <li>
+            <h3>Cardiovascular Training</h3>
+            <img src="2.jpg" alt="Cardiovascular Training">
+            <p>Burn fat and improve cardiovascular health with our wide variety of cardio equipment and classes.</p>
+          </li>
+          <li>
+            <h3>Group Fitness Classes</h3>
+            <img src="3.jpg" alt="Group Fitness Classes">
+            <p>Join one of our groupfitness classes for a fun and challenging workout with a community of like-minded individuals.</p>
+          </li>
+          <li>
+            <h3>Personal Training</h3>
+            <img src="4.jpg" alt="Personal Training">
+            <p>Get personalized attention and guidance from our expert trainers to help you reach your fitness goals faster.</p>
+          </li>
+        </ul>
+      </section>
+      <section id="membership">
+        <h2>Membership</h2>
+        <p>Choose from our variety of membership options to find the perfect plan for your fitness needs.</p>
+        <ul>
+          <li>Basic Membership</li>
+          <li>Premium Membership</li>
+          <li>Family Membership</li>
+          <li>Couples Membership</li>
+        </ul>
+        <button>Join Now</button>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button>Send Message</button>
+        </form>
+     </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Peak Fitness. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
