@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>Peak Fitness</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -16,18 +18,19 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#membership">Membership</a></li>
+          <li><a href="#team">Our Team</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="carousel">
+      <!-- <section id="carousel">
         <div class="carousel-container"></div>
         <div class="carousel-navigation">
           <button class="carousel-button prev">&#8249;</button>
           <button class="carousel-button next">&#8250;</button>
         </div>
-      </section>
+      </section> -->
       <section id="hero">
         <h1>Welcome to Peak Fitness</h1>
         <p>The best gym to achieve your fitness goals.</p>
@@ -42,60 +45,28 @@
           <li>Variety of Group Fitness Classes</li>
         </ul>
       </section>
-
-      <section id="Teams">
-  <h2>Our Teams</h2>
-  <p>Meet the talented individuals behind our gym:</p>
-  <div class="team-categories">
-    <div class="team-category trainers" onmouseover="showTrainersPopup()" onmouseout="hideTrainersPopup()">
-      <h3>Trainers</h3>
-    </div>
-    <div class="team-category assistants" onmouseover="showAssistantsPopup()" onmouseout="hideAssistantsPopup()">
-      <h3>Assistants</h3>
-    </div>
-  </div>
-  <div class="team-popup trainers-popup" id="trainers-popup">
-    <div class="team-popup-container">
-      <h3>Our Trainers</h3>
-      <div class="trainer">
-        <img src="trainer1.jpg" alt="Trainer 1">
-        <h4>John Smith</h4>
-        <p>john.smith@gym.com</p>
-      </div>
-      <div class="trainer">
-        <img src="trainer2.jpg" alt="Trainer 2">
-        <h4>Jane Doe</h4>
-        <p>jane.doe@gym.com</p>
-      </div>
-      <div class="trainer">
-        <img src="trainer3.jpg" alt="Trainer 3">
-        <h4>Mike Johnson</h4>
-        <p>mike.johnson@gym.com</p>
-      </div>
-    </div>
-  </div>
-  <div class="team-popup assistants-popup" id="assistants-popup">
-    <div class="team-popup-container">
-      <h3>Our Assistants</h3>
-      <div class="assistant">
-        <img src="assistant1.jpg" alt="Assistant 1">
-        <h4>Sara Williams</h4>
-        <p>sara.williams@gym.com</p>
-      </div>
-      <div class="assistant">
-        <img src="assistant2.jpg" alt="Assistant 2">
-        <h4>Tom Brown</h4>
-        <p>tom.brown@gym.com</p>
-      </div>
-      <div class="assistant">
-        <img src="assistant3.jpg" alt="Assistant 3">
-        <h4>Emily Davis</h4>
-        <p>emily.davis@gym.com</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+      <section id="team">
+        <div>
+          <h1>Our Team</h1>
+          <div class="team-container">
+            <div>
+              <img src="trainer-1.jpg" alt="Trainer 1"> 
+              <h2>Jane Doe</h2>
+              <p>Personal Trainer</p>
+            </div>
+            <div>
+              <img src="trainer-2.jpg" alt="Trainer 2"> 
+              <h2>Dwayne Johnson</h2>
+              <p>Group Fitness Instructor</p>
+            </div>
+            <div>
+              <img src="trainer-3.jpg" alt="Trainer 3"> 
+              <h2>John Doe</h2>
+              <p>Nutrition Coach</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="services">
         <h2>Our Services</h2>
         <ul>
@@ -141,13 +112,40 @@
           <input type="email" id="email" name="email" required>
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
-
           <button>Send Message</button>
         </form>
-     </section>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2023 Peak Fitness. All rights reserved.</p>
+      
+      <div class="footer-links">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="works.html">Our Works</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p><i class="fa fa-map-marker"></i> 1 Gym Street, Gymtown, Gymoria Federation</p>
+          <p><i class="fa fa-phone"></i> 555-123-4567</p>
+          <p><i class="fa fa-envelope"></i> info@gymcompany.com</p>
+        </div>
+        <nav class="social-media">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          <p>&copy; 2023 Gym Company. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
