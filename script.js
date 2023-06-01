@@ -78,3 +78,12 @@ function showAssistantsPopup() {
 function hideAssistantsPopup() {
     document.getElementById("assistants-popup").style.display = "none";
 }
+
+// Burger-menu
+const burgerMenu = document.querySelector('.burger-menu');
+const menu = document.querySelector('.menu');
+
+burgerMenu.addEventListener('click', function() {
+  this.classList.toggle('active');
+  menu.classList.toggle('active');
+});
